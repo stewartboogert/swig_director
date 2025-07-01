@@ -6,4 +6,4 @@ class element_track_single(element.element) :
         super().__init__(name)
 
     def track_single(self):
-        print("track single derived")
+        print("PYT track single derived",self.get_name())

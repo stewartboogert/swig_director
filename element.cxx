@@ -14,10 +14,10 @@ std::string element::get_name() {
 }
 
 void element::track() const {
-  std::cout << "track" << " " << _name << std::endl;
+  std::cout << "C++ track" << " " << _name << std::endl;
   track_single();
 }
 
 void element::track_single() const{
-  std::cout << "track_signal" << " " << _name << std::endl;
+  std::cout << "C++ track_signal" << " " << _name << std::endl;
 }

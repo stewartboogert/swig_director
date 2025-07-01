@@ -11,6 +11,7 @@ public:
   ~line();
   
   void add_element(std::shared_ptr<const element> e);
+  void add_element(std::shared_ptr<element> e);
   void track();
 
   int size();

@@ -1,9 +1,14 @@
 // file: example.i
-%module line
+%module(directors="1") line
+
 %{
 #include "line.hh"
 %}
 
-%feature("director") line;  // Enable director feature for Base
+%include <std_shared_ptr.i>
+
+%shared_ptr(line)
+
+%feature("director", allprotected="1") line;
 
 %include "line.hh"

@@ -8,6 +8,10 @@ void line::add_element(std::shared_ptr<const element> e) {
   _elements.push_back(e);
 }
 
+void line::add_element(std::shared_ptr<element> e) {
+  _elements.push_back(e);
+}
+
 void line::track() {
   for(auto e : _elements) {
     e->track();

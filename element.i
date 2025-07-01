@@ -22,7 +22,8 @@
 
 %inline %{
   std::shared_ptr<const element> make_element(std::string name) {
-    return std::shared_ptr<const element>(new element(name));
+    return std::make_shared<const element>(name);
+    // return std::shared_ptr<const element>(new element(name));
   }
 %}
 
