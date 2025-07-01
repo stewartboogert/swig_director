@@ -4,7 +4,7 @@ line::line() {}
 
 line::~line() {}
 
-void line::add_element(std::shared_ptr<element> e) {
+void line::add_element(std::shared_ptr<const element> e) {
   _elements.push_back(e);
 }
 

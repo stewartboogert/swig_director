@@ -10,11 +10,11 @@ public:
   line();
   ~line();
   
-  void add_element(std::shared_ptr<element> e);
+  void add_element(std::shared_ptr<const element> e);
   void track();
 
   int size();
   
 private:
-  std::vector< std::shared_ptr<element> > _elements;
+  std::vector< std::shared_ptr<const element> > _elements;
 };
